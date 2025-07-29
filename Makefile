@@ -30,4 +30,3 @@ clean:
 	rm -rf $(BIN_DIR)/$(TARGET)
 
 .PHONY: all clean
-

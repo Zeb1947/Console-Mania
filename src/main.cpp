@@ -21,8 +21,6 @@ const int gridWidth = 22;
 const int gridHeight = 22;
 const int NUM_LEVELS = 2;
 const unsigned int speed = 20;  // milliseconds
-
-char username[17];  // 16 characters + null terminator
 std::string mainCharacterName = "EZRA";
 
 const char playerSymbol = '@';
@@ -171,9 +169,6 @@ bool handleInput(char input) {
 int main() {
     std::cout << "Welcome to CONSOLE MANIA!" << std::endl;
     std::cout << "There are no saves in this game so beware..." << std::endl << std::endl;
-    std::cout << "Please enter your name (limit 16 characters): ";
-    std::cin.getline(username, sizeof(username));
-    std::cout << "Hello, " << username << "!" << std::endl;
     delay(2500);
 
     clearScreen();
@@ -210,6 +205,6 @@ int main() {
         delay(speed);
     }
 
-    std::cout << "Thanks for playing, " << username << "!" << std::endl;
+    std::cout << "Thanks for playing, " << mainCharacterName << "!" << std::endl;
     return 0;
 }
