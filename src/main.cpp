@@ -167,6 +167,10 @@ bool handleInput(char input) {
 
 // ==== MAIN GAME ====
 int main() {
+    #ifdef _WIN32
+	system("title CONSOLE MANIA");
+    #endif
+
     std::cout << "Welcome to CONSOLE MANIA!" << std::endl;
     std::cout << "There are no saves in this game so beware..." << std::endl << std::endl;
     delay(2500);
